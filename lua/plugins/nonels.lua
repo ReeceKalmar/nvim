@@ -23,6 +23,7 @@ return {
                 null_ls.builtins.completion.spell,
                 null_ls.builtins.completion.luasnip,
                 null_ls.builtins.completion.csharpier,
+                null_ls.builtins.formatting.csharpier,
             },
         })
         vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
