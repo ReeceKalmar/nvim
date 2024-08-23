@@ -26,7 +26,7 @@ return {
         config = function()
             local lspconfig = require("lspconfig")
             lspconfig.lua_ls.setup({})
-            lspconfig.omnisharp_mono.setup({})
+            lspconfig.csharp_ls.setup({})
 
             vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
             vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
