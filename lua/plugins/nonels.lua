@@ -8,6 +8,7 @@ return {
                 null_ls.builtins.formatting.stylua,
                 null_ls.builtins.completion.spell,
                 null_ls.builtins.formatting.csharpier,
+                null_ls.builtins.diagnostics.textidote,
             },
         })
         vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
