@@ -52,7 +52,7 @@ return {
 			lspconfig.lua_ls.setup({})
 			lspconfig.texlab.setup({})
 			lspconfig.omnisharp.setup({
-				cmd = { "dotnet", "/home/reece311/.config/omnisharp/OmniShardp.dll" },
+				cmd = { "dotnet", "/home/reece311/.config/omnisharp/OmniSharp.dll" },
 				settings = {
 					FormattingOptions = {
 						EnableEditorConfigSupport = true,
