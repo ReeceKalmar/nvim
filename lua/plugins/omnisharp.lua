@@ -9,6 +9,7 @@ return {
 
 			-- Set ALE linters for C#
 			vim.g.ale_linters = { cs = { "OmniSharp" } }
+			vim.g.ale_fix_on_save = 1
 
 			-- Autocommands for OmniSharp functionality
 			vim.api.nvim_create_augroup("omnisharp_commands", { clear = true })
@@ -35,6 +36,7 @@ return {
 						keymap_opts
 					)
 					vim.api.nvim_set_keymap("n", "<Leader>ost", "<Plug>(omnisharp_type_lookup)", keymap_opts)
+					vim.api.nvim_set_keymap("n", "<Leader>os=", "<Plug>(omnisharp_code_format)", keymap_opts) -- Format
 					vim.api.nvim_set_keymap("n", "<Leader>osd", "<Plug>(omnisharp_documentation)", keymap_opts)
 					vim.api.nvim_set_keymap("n", "<Leader>osfs", "<Plug>(omnisharp_find_symbol)", keymap_opts)
 					vim.api.nvim_set_keymap("n", "<Leader>osfx", "<Plug>(omnisharp_fix_usings)", keymap_opts)
