@@ -51,6 +51,7 @@ return {
 			local lspconfig = require("lspconfig")
 			lspconfig.lua_ls.setup({})
 			lspconfig.texlab.setup({})
+			lspconfig.pyright.setup({})
 			lspconfig.clangd.setup({})
 			lspconfig.omnisharp.setup({
 				cmd = { "dotnet", "/home/reece311/.config/omnisharp/OmniSharp.dll" },
